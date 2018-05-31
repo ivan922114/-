@@ -7,21 +7,45 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AF65CCCD20C012BE00C0F1D6 /* PlantDetailHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF65CCCC20C012BE00C0F1D6 /* PlantDetailHeaderView.swift */; };
+		AF65CCD420C0161D00C0F1D6 /* EnglishnameTextCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF65CCD320C0161D00C0F1D6 /* EnglishnameTextCell.swift */; };
+		AF65CCD620C0163F00C0F1D6 /* SectionnameTextCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF65CCD520C0163F00C0F1D6 /* SectionnameTextCell.swift */; };
+		AF65CCD820C0166A00C0F1D6 /* AliasTextCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF65CCD720C0166A00C0F1D6 /* AliasTextCell.swift */; };
+		AF65CCDA20C0168200C0F1D6 /* OriginTextCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF65CCD920C0168200C0F1D6 /* OriginTextCell.swift */; };
+		AF65CCDC20C0169E00C0F1D6 /* distributedTextCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF65CCDB20C0169E00C0F1D6 /* distributedTextCell.swift */; };
+		AF65CCDE20C016B300C0F1D6 /* applicationTextCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF65CCDD20C016B300C0F1D6 /* applicationTextCell.swift */; };
+		AF65CCE020C031FD00C0F1D6 /* PlantDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF65CCDF20C031FD00C0F1D6 /* PlantDetailViewController.swift */; };
 		AF68C1E72098447800586F04 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF68C1E62098447800586F04 /* AppDelegate.swift */; };
-		AF68C1E92098447900586F04 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF68C1E82098447900586F04 /* ViewController.swift */; };
 		AF68C1EC2098447900586F04 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AF68C1EA2098447900586F04 /* Main.storyboard */; };
 		AF68C1EE2098447A00586F04 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AF68C1ED2098447A00586F04 /* Assets.xcassets */; };
 		AF68C1F12098447A00586F04 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AF68C1EF2098447A00586F04 /* LaunchScreen.storyboard */; };
+		AF68C1F92098488C00586F04 /* PlantCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF68C1F82098488C00586F04 /* PlantCell.swift */; };
+		AF68C201209862CD00586F04 /* PlantTypeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF68C200209862CD00586F04 /* PlantTypeCell.swift */; };
+		AFA2C18D20BC7A2600BC98D4 /* Plant.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFA2C18C20BC7A2600BC98D4 /* Plant.swift */; };
+		AFC23DD52098CB87002D9DD2 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFC23DD42098CB87002D9DD2 /* MenuViewController.swift */; };
+		AFC23DD720994ECF002D9DD2 /* PlantListController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFC23DD620994ECF002D9DD2 /* PlantListController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		AF65CCCC20C012BE00C0F1D6 /* PlantDetailHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlantDetailHeaderView.swift; sourceTree = "<group>"; };
+		AF65CCD320C0161D00C0F1D6 /* EnglishnameTextCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = EnglishnameTextCell.swift; path = "暨大校園植物誌/Cell/EnglishnameTextCell.swift"; sourceTree = SOURCE_ROOT; };
+		AF65CCD520C0163F00C0F1D6 /* SectionnameTextCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionnameTextCell.swift; sourceTree = "<group>"; };
+		AF65CCD720C0166A00C0F1D6 /* AliasTextCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AliasTextCell.swift; sourceTree = "<group>"; };
+		AF65CCD920C0168200C0F1D6 /* OriginTextCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OriginTextCell.swift; sourceTree = "<group>"; };
+		AF65CCDB20C0169E00C0F1D6 /* distributedTextCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = distributedTextCell.swift; sourceTree = "<group>"; };
+		AF65CCDD20C016B300C0F1D6 /* applicationTextCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = applicationTextCell.swift; sourceTree = "<group>"; };
+		AF65CCDF20C031FD00C0F1D6 /* PlantDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlantDetailViewController.swift; sourceTree = "<group>"; };
 		AF68C1E32098447800586F04 /* 暨大校園植物誌.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "暨大校園植物誌.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AF68C1E62098447800586F04 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		AF68C1E82098447900586F04 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		AF68C1EB2098447900586F04 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		AF68C1ED2098447A00586F04 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AF68C1F02098447A00586F04 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AF68C1F22098447A00586F04 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AF68C1F82098488C00586F04 /* PlantCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlantCell.swift; sourceTree = "<group>"; };
+		AF68C200209862CD00586F04 /* PlantTypeCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlantTypeCell.swift; sourceTree = "<group>"; };
+		AFA2C18C20BC7A2600BC98D4 /* Plant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Plant.swift; sourceTree = "<group>"; };
+		AFC23DD42098CB87002D9DD2 /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
+		AFC23DD620994ECF002D9DD2 /* PlantListController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlantListController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,6 +59,56 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		AF65CCCE20C0150500C0F1D6 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				AFC23DD42098CB87002D9DD2 /* MenuViewController.swift */,
+				AFC23DD620994ECF002D9DD2 /* PlantListController.swift */,
+				AF65CCDF20C031FD00C0F1D6 /* PlantDetailViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		AF65CCCF20C0151B00C0F1D6 /* Class */ = {
+			isa = PBXGroup;
+			children = (
+				AFA2C18C20BC7A2600BC98D4 /* Plant.swift */,
+			);
+			path = Class;
+			sourceTree = "<group>";
+		};
+		AF65CCD020C0153700C0F1D6 /* storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				AF68C1EA2098447900586F04 /* Main.storyboard */,
+				AF68C1EF2098447A00586F04 /* LaunchScreen.storyboard */,
+			);
+			path = storyboard;
+			sourceTree = "<group>";
+		};
+		AF65CCD120C0155700C0F1D6 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				AF68C1F82098488C00586F04 /* PlantCell.swift */,
+				AF68C200209862CD00586F04 /* PlantTypeCell.swift */,
+				AF65CCD320C0161D00C0F1D6 /* EnglishnameTextCell.swift */,
+				AF65CCD520C0163F00C0F1D6 /* SectionnameTextCell.swift */,
+				AF65CCD720C0166A00C0F1D6 /* AliasTextCell.swift */,
+				AF65CCD920C0168200C0F1D6 /* OriginTextCell.swift */,
+				AF65CCDB20C0169E00C0F1D6 /* distributedTextCell.swift */,
+				AF65CCDD20C016B300C0F1D6 /* applicationTextCell.swift */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		AF65CCD220C0156D00C0F1D6 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				AF65CCCC20C012BE00C0F1D6 /* PlantDetailHeaderView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		AF68C1DA2098447800586F04 = {
 			isa = PBXGroup;
 			children = (
@@ -54,12 +128,14 @@
 		AF68C1E52098447800586F04 /* 暨大校園植物誌 */ = {
 			isa = PBXGroup;
 			children = (
-				AF68C1E62098447800586F04 /* AppDelegate.swift */,
-				AF68C1E82098447900586F04 /* ViewController.swift */,
-				AF68C1EA2098447900586F04 /* Main.storyboard */,
-				AF68C1ED2098447A00586F04 /* Assets.xcassets */,
-				AF68C1EF2098447A00586F04 /* LaunchScreen.storyboard */,
+				AF65CCD020C0153700C0F1D6 /* storyboard */,
+				AF65CCCE20C0150500C0F1D6 /* Controller */,
+				AF65CCD120C0155700C0F1D6 /* Cell */,
+				AF65CCCF20C0151B00C0F1D6 /* Class */,
+				AF65CCD220C0156D00C0F1D6 /* View */,
 				AF68C1F22098447A00586F04 /* Info.plist */,
+				AF68C1E62098447800586F04 /* AppDelegate.swift */,
+				AF68C1ED2098447A00586F04 /* Assets.xcassets */,
 			);
 			path = "暨大校園植物誌";
 			sourceTree = "<group>";
@@ -135,8 +211,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AF68C1E92098447900586F04 /* ViewController.swift in Sources */,
+				AFC23DD720994ECF002D9DD2 /* PlantListController.swift in Sources */,
+				AF65CCDE20C016B300C0F1D6 /* applicationTextCell.swift in Sources */,
+				AF68C1F92098488C00586F04 /* PlantCell.swift in Sources */,
+				AF65CCDA20C0168200C0F1D6 /* OriginTextCell.swift in Sources */,
+				AFC23DD52098CB87002D9DD2 /* MenuViewController.swift in Sources */,
 				AF68C1E72098447800586F04 /* AppDelegate.swift in Sources */,
+				AF65CCD420C0161D00C0F1D6 /* EnglishnameTextCell.swift in Sources */,
+				AF65CCCD20C012BE00C0F1D6 /* PlantDetailHeaderView.swift in Sources */,
+				AF65CCD620C0163F00C0F1D6 /* SectionnameTextCell.swift in Sources */,
+				AF65CCDC20C0169E00C0F1D6 /* distributedTextCell.swift in Sources */,
+				AFA2C18D20BC7A2600BC98D4 /* Plant.swift in Sources */,
+				AF68C201209862CD00586F04 /* PlantTypeCell.swift in Sources */,
+				AF65CCD820C0166A00C0F1D6 /* AliasTextCell.swift in Sources */,
+				AF65CCE020C031FD00C0F1D6 /* PlantDetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
