@@ -169,7 +169,7 @@
                             <outlet property="delegate" destination="bkC-yN-7Ys" id="vpD-26-obn"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="暨大校園植物誌" id="ru3-c6-cUd"/>
+                    <navigationItem key="navigationItem" title="小小蝴蝶誌" id="ru3-c6-cUd"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="B5c-df-s55" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
