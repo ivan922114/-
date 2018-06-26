@@ -14,7 +14,7 @@
 > 誤報或是與記錄衝突的蝶種。
 + 總計臺灣共有421種蝴蝶曾被記錄。這個列表只記錄固有種和迷蝶，共392種。
 
-## * 《小小蝴蝶誌》是一個介紹其中幾種蝴蝶的一個小小的APP，通過蝴蝶的種類來分類介紹
+### 《小小蝴蝶誌》是一個介紹其中幾種蝴蝶的一個小小的APP，通過蝴蝶的種類來分類介紹
 
 ## 程式執行範例：
 <img src="https://github.com/ivan922114/ios-NCNU-mid/blob/master/圖片/1.png" width="30%" height="30%"><img src="https://github.com/ivan922114/ios-NCNU-mid/blob/master/圖片/2.png" width="30%" height="30%"><img src="https://github.com/ivan922114/ios-NCNU-mid/blob/master/圖片/3.png" width="30%" height="30%"><img src="https://github.com/ivan922114/ios-NCNU-mid/blob/master/圖片/4.png" width="30%" height="30%"><img src="https://github.com/ivan922114/ios-NCNU-mid/blob/master/圖片/5.png" width="30%" height="30%">
