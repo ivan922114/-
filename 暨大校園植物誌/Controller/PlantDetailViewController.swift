@@ -74,7 +74,6 @@ class PlantDetailViewController: UIViewController, UITableViewDataSource, UITabl
         case 4:
             let cell = tableView.dequeueReusableCell(withIdentifier: String(describing: mapViewCell.self), for: indexPath) as! mapViewCell
             cell.configure(location: locations)
-//            print(locations)
             
             return cell
         default:
