@@ -9,30 +9,24 @@
 import Foundation
 
 class Plant {
-    var Name: String
-    var Englishname: String
-    var Scientificname: String
-    var Sectionname: String
-    var Alias: String
-    var Origin: String
-    var distributed: String
-    var application: String
+    var Name: String                //中文名
+    var Scientificname: String      //學名
+    var Sectionname: String         //科名
+    var distributed: String         //分布
+    var habits: String         //生態習性
     var image: String
     
-    init(Name:String, Englishname: String, Scientificname: String, Sectionname: String, Alias: String, Origin: String, distributed: String, application: String, image: String) {
+    init(Name:String, Scientificname: String, Sectionname: String, distributed: String, habits: String, image: String) {
         
         self.Name = Name
-        self.Englishname = Englishname
         self.Scientificname = Scientificname
         self.Sectionname = Sectionname
-        self.Alias = Alias
-        self.Origin = Origin
         self.distributed = distributed
-        self.application = application
+        self.habits = habits
         self.image = image
     }
     
     convenience init() {
-        self.init(Name: "", Englishname: "", Scientificname: "", Sectionname: "", Alias: "", Origin: "", distributed: "", application: "", image: "")
+        self.init(Name: "", Scientificname: "", Sectionname: "", distributed: "", habits: "", image: "")
     }
 }

@@ -20,30 +20,23 @@ class MenuViewController: UIViewController {
         case 0:
             let destinationController = segue.destination as! PlantListController
             destinationController.tag = 0
-            destinationController.PlantNames = ["欖仁樹", "奧氏虎皮楠"]
-            destinationController.PlantLocations = ["通識停車場旁", "行政大樓停車場旁草地"]
-            destinationController.PlantImage = ["欖仁樹縮圖", "奧氏虎皮楠縮圖"]
+            destinationController.PlantNames = ["玉帶鳳蝶", "紫蛇目蝶", "青帶鳳蝶"]
+            destinationController.PlantLocations = ["鳳蝶科", "鳳蝶科", "鳳蝶科"]
+            destinationController.PlantImage = ["玉帶鳳蝶", "紫蛇目蝶", "青帶鳳蝶"]
 
         case 1:
             let destinationController = segue.destination as! PlantListController
             destinationController.tag = 1
-            destinationController.PlantNames = ["變葉木"]
-            destinationController.PlantLocations = ["學人會館前"]
-            destinationController.PlantImage = ["變葉木縮圖"]
+            destinationController.PlantNames = ["姬小紋青斑蝶", "黃蛺蝶", "流星蛺蝶"]
+            destinationController.PlantLocations = ["蛺蝶科", "蛺蝶科", "蛺蝶科"]
+            destinationController.PlantImage = ["姬小紋青斑蝶", "黃蛺蝶", "流星蛺蝶"]
 
         case 2:
             let destinationController = segue.destination as! PlantListController
             destinationController.tag = 2
-            destinationController.PlantNames = ["九芎"]
-            destinationController.PlantLocations = ["機車道"]
-            destinationController.PlantImage = ["九芎縮圖"]
-        
-        case 3:
-            let destinationController = segue.destination as! PlantListController
-            destinationController.tag = 3
-            destinationController.PlantNames = ["台灣海桐"]
-            destinationController.PlantLocations = ["科一館停車場前"]
-            destinationController.PlantImage = ["台灣海桐縮圖"]
+            destinationController.PlantNames = ["斑粉蝶", "江崎黃蝶", "端紅蝶"]
+            destinationController.PlantLocations = ["粉蝶科", "粉蝶科", "粉蝶科"]
+            destinationController.PlantImage = ["斑粉蝶", "江崎黃蝶", "端紅蝶"]
 
         default:
             break

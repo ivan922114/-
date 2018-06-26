@@ -8,9 +8,40 @@
 
 import UIKit
 
-class PlantDetailViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
+class PlantDetailViewController: UIViewController, UITableViewDataSource, UITableViewDelegate, URLSessionDataDelegate{
     
-    var plant : Plant = Plant()
+    @IBOutlet var tableview: UITableView!
+    
+    var locations = Location()
+    
+    func getData(btfName: String){
+        var urlComponents: URLComponents = URLComponents(string: "https://opendata.epa.gov.tw")!
+        urlComponents.path = "/ws/Data/Butterfly/"
+        urlComponents.queryItems = [URLQueryItem(name: "$format", value: "json"), URLQueryItem(name:"$filter", value:"CommonName eq '\(btfName)'")]
+        let searchURL = urlComponents.url!
+//        print(searchURL)
+        
+        let config = URLSessionConfiguration.default
+        let session: URLSession = URLSession(configuration: config, delegate: self, delegateQueue: nil)
+        session.dataTask(with: searchURL, completionHandler: { (data, urlResponse, error) in
+            if let data = data,
+                let json = try? JSONSerialization.jsonObject(with: data, options: []) as? [AnyObject] {
+                for result in json! {
+                    if let Lat = result["WGS84Lat"] {
+                        self.locations.lat = Lat! as! String
+//                        print(self.locations.lat)
+                    }
+                    if let Lon = result["WGS84Lon"] {
+                        self.locations.lon = Lon! as! String
+//                        print(self.locations.lon)
+                    }
+                }
+            }
+        }).resume()
+    }
+    
+    
+    var plant: Plant = Plant()
     
     @IBOutlet var headerView: PlantDetailHeaderView!
     
@@ -19,34 +50,32 @@ class PlantDetailViewController: UIViewController, UITableViewDataSource, UITabl
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 6
+        return 5
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         switch indexPath.row {
         case 0:
-            let cell = tableView.dequeueReusableCell(withIdentifier: String(describing: EnglishnameTextCell.self), for: indexPath) as! EnglishnameTextCell
-            cell.EnglishnameLabel.text = plant.Englishname
-            return cell
-        case 1:
             let cell = tableView.dequeueReusableCell(withIdentifier: String(describing: SectionnameTextCell.self), for: indexPath) as! SectionnameTextCell
             cell.SectionnameLabel.text = plant.Sectionname
             return cell
-        case 2:
-            let cell = tableView.dequeueReusableCell(withIdentifier: String(describing: AliasTextCell.self), for: indexPath) as! AliasTextCell
-            cell.AliasLabel.text = plant.Alias
-            return cell
-        case 3:
-            let cell = tableView.dequeueReusableCell(withIdentifier: String(describing: OriginTextCell.self), for: indexPath) as! OriginTextCell
-            cell.OriginLabel.text = plant.Origin
-            return cell
-        case 4:
+        case 1:
             let cell = tableView.dequeueReusableCell(withIdentifier: String(describing: distributedTextCell.self), for: indexPath) as! distributedTextCell
             cell.distributedLabel.text = plant.distributed
             return cell
-        case 5:
-            let cell = tableView.dequeueReusableCell(withIdentifier: String(describing: applicationTextCell.self), for: indexPath) as! applicationTextCell
-            cell.applicationLabel.text = plant.application
+        case 2:
+            let cell = tableView.dequeueReusableCell(withIdentifier: String(describing: habitsTextCell.self), for: indexPath) as! habitsTextCell
+            cell.habitsLabel.text = plant.habits
+            return cell
+        case 3:
+            let cell = tableView.dequeueReusableCell(withIdentifier: String(describing: SeparatorCell.self), for: indexPath) as! SeparatorCell
+            cell.titleLabel.text = "蝴蝶在哪兒?"
+            return cell
+        case 4:
+            let cell = tableView.dequeueReusableCell(withIdentifier: String(describing: mapViewCell.self), for: indexPath) as! mapViewCell
+            cell.configure(location: locations)
+//            print(locations)
+            
             return cell
         default:
             fatalError("Failed to instantiate the table view cell.")
@@ -59,7 +88,8 @@ class PlantDetailViewController: UIViewController, UITableViewDataSource, UITabl
         navigationItem.largeTitleDisplayMode = .never
         navigationController?.navigationBar.prefersLargeTitles = true
         navigationController?.navigationBar.isHidden = false
-
+        getData(btfName: plant.Name)
+        
         headerView.headerImageView.image = UIImage(named: plant.image)
         headerView.NameLabel.text = plant.Name
         headerView.ScientificnameLabel.text = plant.Scientificname
@@ -71,7 +101,13 @@ class PlantDetailViewController: UIViewController, UITableViewDataSource, UITabl
         // Dispose of any resources that can be recreated.
     }
     
-
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "showMap" {
+            let destinationController = segue.destination as! mapViewController
+                destinationController.pName = plant.Name
+        }
+    }
+    
     /*
     // MARK: - Navigation
 
